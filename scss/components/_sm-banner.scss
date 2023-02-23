@@ -1,0 +1,42 @@
+#sm-banner {
+    @include align-position-by-flex(center, space-between);
+    flex-wrap: wrap;
+
+    .banner-box {
+        @include align-position-by-flex(flex-start, center);
+        flex-direction: column;
+        text-align: center;
+        min-width: 660px;
+        height: 50vh;
+        @include fixingImageBackground('../img/banner/b17.jpg', cover, center);
+        padding: 20px;
+        margin-bottom: 20px;
+
+        h4 {
+            color: #fff;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        h2 {
+            color: #fff;
+            font-size: 28px;
+            font-weight: 600;
+        }
+
+        p {
+            color: #fff;
+            font-size: 14px;
+            padding-bottom: 15px;
+        }
+
+
+        &:hover button {
+            background-color: $cl-088178;
+        }
+    }
+
+    .banner-box2 {
+        @include fixingImageBackground('../img/banner/b10.jpg', cover, center);
+    }
+}

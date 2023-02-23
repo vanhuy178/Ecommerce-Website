@@ -1,0 +1,53 @@
+// BASE
+@import './base/reset';
+@import './base/cutomize';
+// HELPER
+@import './helpers/variable';
+
+// MIXIN
+@import './mixin/mixin';
+
+//LAYOUT
+@import './layout/header';
+@import './layout/footer';
+
+// COMPONENT
+@import './components/hero';
+@import './components/feature';
+@import './components/product1';
+@import './components/banner';
+@import './components/sm-banner';
+@import './components/banner3';
+@import './components/newsletter';
+
+// RESPONSIVE SM
+// HEADER
+@import './responsive/header/sm-screen';
+
+// HERO
+@import './responsive/hero/sm-hero';
+
+// SCREEN
+@import './responsive/feature/sm-screen';
+
+// PRODUCT 1
+@import './responsive/product1/sm-screen';
+
+//BANNER 
+@import './responsive/banner/sm-responsive';
+
+// NEWSLETTER
+@import './responsive/newsletter/sm-screen';
+
+
+
+
+
+// RESPONSIVE IPHONE 12PRO
+@import './responsive/header/iphone-x';
+@import './responsive/hero/iphone-x';
+@import './responsive/product1/_iphone-x';
+@import './responsive/banner/iphone-x';
+@import './responsive/newsletter/iphone-x';
+@import './responsive/feature/iphone-x';
+@import './responsive/footer/iphone-x';

@@ -1,0 +1,28 @@
+#banner {
+    @include align-position-by-flex(center, center);
+    flex-direction: column;
+    text-align: center;
+    width: 100%;
+    height: 40vh;
+    @include fixingImageBackground('../img/banner/b2.jpg', cover, center);
+
+    h4 {
+        color: $cl-fff;
+        font-size: 14px;
+    }
+
+    h2 {
+        color: $cl-fff;
+        font-size: 30px;
+        padding: 10px 0;
+
+        span {
+            color: $cl-ef3636;
+        }
+    }
+
+    button:hover {
+        background: $cl-088178;
+        color: $cl-fff;
+    }
+}

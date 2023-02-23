@@ -1,0 +1,21 @@
+@mixin align-position-by-flex($align , $justify) {
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+}
+
+@mixin transition ($attr, $time, $type) {
+    transition: $attr $time $type;
+}
+
+@mixin fixingImageBackground($img, $size, $position) {
+    background-image: url($img);
+    background-position: $position;
+    background-size: $size;
+}
+
+@mixin styleText($size, $color, $weight) {
+    font-size: $size;
+    color: $color;
+    font-weight: $weight;
+}

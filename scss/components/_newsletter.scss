@@ -1,0 +1,47 @@
+#newsletter {
+    @include align-position-by-flex(center, space-between);
+    flex-wrap: wrap;
+    background-image: url('../img/banner/b14.png');
+    background-repeat: no-repeat;
+    background-position: 20% 30%;
+    background-color: #041e42;
+
+    .newstext {
+        h4 {
+            @include styleText(22px, #fff, $bold);
+        }
+
+        p {
+            @include styleText(14px, #818ea0, $bold);
+
+            span {
+                color: #ffbd27;
+            }
+        }
+    }
+
+    .form {
+        display: flex;
+        width: 40%;
+
+        input {
+            height: 3.125rem;
+            padding: 0 1.25rem;
+            font-size: 14px;
+            width: 100%;
+            border: 1px solid transparent;
+            border-radius: 4px;
+            outline: none;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        button {
+            background-color: $cl-088178;
+            color: #fff;
+            white-space: nowrap;
+            border-bottom-left-radius: 0;
+            border-top-left-radius: 0;
+        }
+    }
+}

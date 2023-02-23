@@ -1,0 +1,13 @@
+@media screen and (max-width: 400.98px) {
+    #feature {
+        justify-content: space-between;
+
+        &.section-p1 {
+            padding: 10px;
+        }
+
+        .fe-box {
+            margin: 10px 0 10px 0;
+        }
+    }
+}

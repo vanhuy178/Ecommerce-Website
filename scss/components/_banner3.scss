@@ -1,0 +1,38 @@
+#banner3 {
+    @include align-position-by-flex(center, space-between);
+    flex-wrap: wrap;
+    padding: 0 80px;
+
+    .banner-box {
+        @include align-position-by-flex(flex-start, center);
+        flex-direction: column;
+        text-align: center;
+        min-width: 30%;
+        height: 50vh;
+        @include fixingImageBackground('../img/banner/b7.jpg', cover, center);
+        padding: $fz-20;
+        margin-bottom: $fz-20;
+
+        h2 {
+            color: #fff;
+            font-weight: $bold;
+            font-size: $fz-22;
+        }
+
+        h3 {
+            color: #ec544e;
+            font-weight: $bold;
+            font-size: $fz-15;
+        }
+    }
+
+    .banner-box2 {
+        @include fixingImageBackground('../img/banner/b4.jpg', cover, center);
+
+    }
+
+    .banner-box3 {
+        @include fixingImageBackground('../img/banner/b18.jpg', cover, center);
+    }
+
+}

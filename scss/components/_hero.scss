@@ -1,0 +1,30 @@
+#hero {
+    margin-top: 80px;
+    background-image: url('../img/hero4.png');
+    height: 90vh;
+    background-position: top 25% right 0;
+    background-size: cover;
+    padding: 80px;
+    @include align-position-by-flex(flex-start, center);
+    flex-direction: column;
+
+    h4 {
+        padding-bottom: 15px;
+    }
+
+    h1 {
+        color: $cl-088178
+    }
+
+    button {
+        background-image: url('../img/button.png');
+        background-color: transparent;
+        color: $cl-088178;
+        border: 0;
+        padding: 14px 80px 14px 65px;
+        background-repeat: no-repeat;
+        cursor: pointer;
+        font-weight: $bold;
+        font-size: 15px;
+    }
+}
