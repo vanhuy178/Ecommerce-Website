@@ -19,6 +19,10 @@
 @import './components/sm-banner';
 @import './components/banner3';
 @import './components/newsletter';
+@import './components/page-header';
+@import './components/pagination';
+@import './components/prodetails';
+@import './components/prodetails';
 
 // RESPONSIVE SM
 // HEADER
@@ -51,3 +55,4 @@
 @import './responsive/newsletter/iphone-x';
 @import './responsive/feature/iphone-x';
 @import './responsive/footer/iphone-x';
+@import './responsive/prodetails/iphone-x';

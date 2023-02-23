@@ -1,0 +1,60 @@
+#pro-details {
+    margin-top: 150px;
+    display: flex;
+
+    .single-pro-image {
+        width: 40%;
+        margin-right: 50px;
+    }
+
+    .small-img-group {
+        @include align-position-by-flex(center, space-between);
+    }
+
+    .small-img-col {
+        flex-basis: 24%;
+        cursor: pointer;
+    }
+
+    .single-pro-details {
+        width: 50%;
+        margin-top: 50px;
+
+        h4 {
+            padding: 40px 0 20px 0;
+        }
+
+        h2 {
+            font-size: 26px;
+        }
+
+        select {
+            display: block;
+            padding: 5px 10px;
+            margin-bottom: 10px;
+        }
+
+        input {
+            width: 50px;
+            height: 47px;
+            padding-left: 10px;
+            margin-right: 10px;
+            font-size: 16px;
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        button {
+            background-color: $cl-088178;
+            color: $cl-fff;
+        }
+
+        p {
+            line-height: 25px;
+        }
+
+    }
+
+}

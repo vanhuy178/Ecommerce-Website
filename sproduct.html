@@ -5,20 +5,288 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech2etc Ecommerce Tutorial</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <title>Cửa hàng</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/module/animate.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <section id='header' class="animate__animated animate__bounce">
+        <a href="#"> <img src="./img//logo.png" alt="logo"></a>
+        <!-- NAVBAR -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="" href="index.html">Home</a>
+                </li>
+                <li class="active"><a href="shop.html">Shop</a></li>
+                <li><a href="blog">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id='closed'><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <!-- MOBILE -->
+        <div id="mobile">
+            <i id='bar' class="fa-solid fa-bars"></i>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </section>
+
+    <!-- PRODUCT DETAILS -->
+    <section id="pro-details" class='section-p1'>
+        <!-- SHOW IMAGES -->
+        <div class="single-pro-image">
+            <img id='main-img' src="img/products/f1.jpg" alt="" width="100%">
+            <!-- SMALL IMAGE GROUP -->
+            <div class="small-img-group">
+                <div class="small-img-col">
+                    <img src="img/products/f2.jpg" alt="f1-img" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f4.jpg" alt="f2-img" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f3.jpg" alt="f3-img" width="100%" class="small-img">
+                </div>
+                <div class="small-img-col">
+                    <img src="img/products/f6.jpg" alt="f3-img" width="100%" class="small-img">
+                </div>
+            </div>
+        </div>
+
+        <!-- SHOW DETTAILS BOOKINGS -->
+        <div class="single-pro-details">
+            <h6>Home T/shirt</h6>
+            <h4>Men's Fashion T shirt</h4>
+            <h2>$139.00</h2>
+            <select name="" id="">
+                <option value="">Select size</option>
+                <option value="">Small size</option>
+                <option value="">Medium size</option>
+                <option value="">Large size</option>
+                <option value="">Extra large size</option>
+            </select>
+            <input type="number" value="1">
+            <button class="normal">Add To Cart</button>
+            <h4>Product details</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi explicabo esse consequuntur harum aliquid
+                similique expedita tempora commodi ipsam sapiente aspernatur molestiae voluptatem inventore, consequatur
+                optio voluptate molestias velit ullam.</p>
+        </div>
+    </section>
+
+    <!-- PRODUCT ONE -->
+    <section id="product1" class="section-p1">
+        <h2>Featured Products</h2>
+        <p>Summner Collection New Morden Design</p>
+        <div class="pro-container">
+            <div class="pro">
+                <img src="img/products/f1.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f2.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f3.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f4.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f5.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f6.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f7.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+            <div class="pro">
+                <img src="img/products/f8.jpg" alt="product-f-1">
+                <div class="des">
+                    <span>adias</span>
+                    <h5>Cartoon Astronaut T-shirts</h5>
+                    <div class="star">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h4>$78</h4>
+                </div>
+                <a href="#"><i class="fa-solid fa-cart-shopping cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletter</h4>
+            <p>Get Email updates about about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="emal" placeholder="your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Quơn Long, Chợ Gạo, Tiền Giang</p>
+            <p><strong>Phone: </strong> 0397010108</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Delivery Infomation</a></p>
+            <p><a href="#">Privacy policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Contact us</a></p>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <p><a href="#">Sign in</a></p>
+            <p><a href="#">View Cart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track My Other</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="col insall">
+            <h4>Install app</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="app">
+                <img src="./img/pay/play.jpg" alt="app">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> &#169; 2023, Nguyen Van Huy - HTML, CSS, JavaScript Ecommerce Template</p>
+        </div>
+    </footer>
 
 
+    <script src="./module/wow.min.js"></script>
     <script>
-            // script for image change on click
+        // SET UP WOW JS
+        new WOW().init();
     </script>
-
-
     <script src="script.js"></script>
 </body>
 

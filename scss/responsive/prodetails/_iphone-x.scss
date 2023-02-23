@@ -1,0 +1,23 @@
+@media screen and (max-width: 400.98px) {
+    #pro-details {
+        margin-top: 100px;
+        flex-direction: column;
+
+        .single-pro-image,
+        .single-pro-details {
+            width: 100%;
+        }
+
+        .single-pro-details {
+            margin-left: 8px;
+
+            h6 {
+                font-size: $fz-15;
+            }
+
+            h4 {
+                font-size: $fz-24;
+            }
+        }
+    }
+}

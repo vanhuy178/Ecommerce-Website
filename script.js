@@ -4,6 +4,9 @@ $(document).ready(function () {
     let bar = $("#bar");
     let closed = $("#closed");
     let nav = $('#navbar');
+    // CUSTOME SHOW PRODUCT ITEM
+    let mainImage = $('#main-img')
+    let listImageJquerry = $('.small-img')
 
     //SHOW NAVBAR MOBILE
     if (bar) {
@@ -18,4 +21,22 @@ $(document).ready(function () {
             nav.removeClass('active')
         })
     }
-}); 
+
+    // SHOW PRODUCT IN SPRODUCT IN SPRODUCT
+    listImageJquerry.each(
+        function (index, element) {
+            element.onclick = function () {
+                mainImage[0].src = element.src
+            }
+
+        }
+    )
+    // SURRIVAL PRODUCT LIST IN SHOP
+    let pro = $('.pro');
+    pro.each(function (index, element) {
+        $(`.${element.className}`).click(function () {
+            return window.location.href = 'sproduct.html'
+        }
+        )
+    })
+});     
