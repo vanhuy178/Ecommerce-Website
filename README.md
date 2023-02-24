@@ -1,6 +1,5 @@
 # Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
 
-
 ## Skill and knowledge we get via this project
 - Responsive Ecommerce Website Tutorial Using HTML CSS & JavaScript.
 - Completely For Beginners.
