@@ -5,15 +5,196 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tech2etc Ecommerce Tutorial</title>
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <title>Giới thiệu</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/module/animate.min.css">
+    <link rel="stylesheet" href="./module/imagehover.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <section id='header' class="animate__animated animate__bounce">
+        <a href="#"> <img src="./img//logo.png" alt="logo"></a>
+        <!-- NAVBAR -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="" href="index.html">Home</a>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li class="active"><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li id="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id='closed'><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <!-- MOBILE -->
+        <div id="mobile">
+            <i id='bar' class="fa-solid fa-bars"></i>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </section>
 
-    <script src="script.js"></script>
+    <!-- HERO -->
+    <section id="page-header" class="about-header animate__animated animate__rubberBand">
+        <h2>
+            #knowus
+        </h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+
+    <!-- ABOUT HEADER -->
+    <section id="about-header" class="section-p1">
+        <!-- IMAGES -->
+        <figure class="imghvr-push-down">
+            <img src="/img/about/a6.jpg" alt="image-about-a1">
+
+            <figcaption>
+                <h4>crazy deals</h4>
+                <h2>buy 1 get 1</h2>
+                <p>The best classic dress is on sale at cars</p>
+                <button class="white">Learn more</button>
+            </figcaption>
+        </figure>
+
+
+        <!-- DESCRIPTION -->
+        <div class="desc-about">
+            <h2>Who are you?</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, corporis. Cumque laboriosam vitae
+                incidunt
+                beatae assumenda omnis in mollitia consequuntur numquam minima, nostrum ratione aliquid error, illum
+                magnam
+                maiores et. Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, corporis. Lorem ipsum dolor
+                sit
+                amet, consectetur adipisicing elit. Eaque voluptatibus quasi accusantium fugiat quaerat similique alias
+                amet
+                nemo quo magni!</p>
+            <abbr title="">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eius qui quod minima nihil
+                delectus. Eum eaque eveniet reiciendis est enim?</abbr>
+
+        </div>
+    </section>
+
+    <section id="about-app">
+        <h1>Download our <a href="#">App</a></h1>
+        <div class="video">
+            <video controls autoplay muted loop src="img/about/1.mp4"></video>
+        </div>
+    </section>
+
+    <!-- FEARTURE -->
+    <section id="feature" class="section-p1">
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="1s" data-wow-delay="0s">
+            <img src="./img/features/f1.png" alt="f-1">
+            <h6>Free Shipping</h6>
+        </div>
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="1.5s" data-wow-delay="0s">
+            <img src="./img/features/f2.png" alt="f-1">
+            <h6>Online Order</h6>
+        </div>
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="2s" data-wow-delay="0s">
+            <img src="./img/features/f3.png" alt="f-1">
+            <h6>Save Money</h6>
+        </div>
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="2.5s" data-wow-delay="0s">
+            <img src="./img/features/f4.png" alt="f-1">
+            <h6>Promotions</h6>
+        </div>
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="3s" data-wow-delay="0s">
+            <img src="./img/features/f5.png" alt="f-1">
+            <h6>Happy Sell</h6>
+        </div>
+        <div class="fe-box wow animate__fadeInUp" data-wow-duration="3.5s" data-wow-delay="0s">
+            <img src="./img/features/f6.png" alt="f-1">
+            <h6>F24/7 Supports</h6>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section id="newsletter" class="section-p1 section-m1">
+        <div class="newstext">
+            <h4>Sign up for newsletter</h4>
+            <p>Get Email updates about about our latest shop and <span>special offers</span></p>
+        </div>
+        <div class="form">
+            <input type="emal" placeholder="your email address">
+            <button class="normal">Sign up</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Quơn Long, Chợ Gạo, Tiền Giang</p>
+            <p><strong>Phone: </strong> 0397010108</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Delivery Infomation</a></p>
+            <p><a href="#">Privacy policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Contact us</a></p>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <p><a href="#">Sign in</a></p>
+            <p><a href="#">View Cart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track My Other</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="col insall">
+            <h4>Install app</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="app">
+                <img src="./img/pay/play.jpg" alt="app">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> &#169; 2023, Nguyen Van Huy - HTML, CSS, JavaScript Ecommerce Template</p>
+        </div>
+    </footer>
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="./module/wow.min.js"></script>
+    <script>
+        // SET UP WOW JS
+        new WOW().init();
+    </script>
+    <script>
+
+
+    </script>
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>

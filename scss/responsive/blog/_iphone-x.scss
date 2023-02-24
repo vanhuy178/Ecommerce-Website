@@ -1,0 +1,21 @@
+@media screen and (max-width: 400.98px) {
+    #blog {
+        padding: 100px 30px 0px 30px;
+
+        .blog-box {
+            display: block;
+
+            .blog-img {
+                width: 100%;
+            }
+
+            h1 {
+                top: -50px;
+            }
+
+            .blog-details {
+                margin-top: 10px;
+            }
+        }
+    }
+}

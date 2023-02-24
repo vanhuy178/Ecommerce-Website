@@ -1,4 +1,7 @@
-
+$(window).on("load", function () {
+    console.log('loading...');
+    $(".loader-wrapper").fadeOut("slow");
+});
 $(document).ready(function () {
     // CUSTOM BAR ICON FOR MOBILE SCREEN
     let bar = $("#bar");

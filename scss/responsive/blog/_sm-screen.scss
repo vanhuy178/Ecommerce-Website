@@ -1,0 +1,17 @@
+// Small devices (landscape phones, less than 768px)
+@media screen and (max-width: 767.98px) {
+    #blog {
+        padding: 120px 50px 0 50px;
+
+        .blog-box {
+            .blog-img {
+                width: 60%;
+            }
+
+            h1 {
+                top: -60px;
+            }
+        }
+
+    }
+}

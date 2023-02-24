@@ -1,6 +1,8 @@
 // BASE
 @import './base/reset';
+// custome lib
 @import './base/cutomize';
+
 // HELPER
 @import './helpers/variable';
 
@@ -24,6 +26,12 @@
 @import './components/prodetails';
 @import './components/prodetails';
 
+//PAGE
+@import './pages/about';
+@import'./pages/blog';
+@import './pages/contact';
+
+
 // RESPONSIVE SM
 // HEADER
 @import './responsive/header/sm-screen';
@@ -43,9 +51,14 @@
 // NEWSLETTER
 @import './responsive/newsletter/sm-screen';
 
+//BLOG
+@import './responsive/blog/sm-screen';
 
+// ABOUT
+@import './responsive/about/sm.screen';
 
-
+// CONTACT
+@import './responsive/contact/sm-screen';
 
 // RESPONSIVE IPHONE 12PRO
 @import './responsive/header/iphone-x';
@@ -56,3 +69,10 @@
 @import './responsive/feature/iphone-x';
 @import './responsive/footer/iphone-x';
 @import './responsive/prodetails/iphone-x';
+@import './responsive/blog/iphone-x';
+@import './responsive/about/iphone-x';
+@import './responsive/contact/iphone-x';
+
+
+// LOADING
+@import './components/loading';

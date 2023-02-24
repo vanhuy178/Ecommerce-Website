@@ -5,18 +5,366 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
-    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" />
-
+    <title>Hợp tác</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+        integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/module/animate.min.css">
+    <link rel="stylesheet" href="./module/imagehover.min.css">
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- HEADER -->
+    <section id='header' class="animate__animated animate__bounce">
+        <a href="#"> <img src="./img//logo.png" alt="logo"></a>
+        <!-- NAVBAR -->
+        <div>
+            <ul id="navbar">
+                <li>
+                    <a class="" href="index.html">Home</a>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
+                <li id="cart"><a href=""><i class="fa-solid fa-cart-shopping"></i></a></li>
+                <a href="#" id='closed'><i class="fa-solid fa-x"></i></a>
+            </ul>
+        </div>
+        <!-- MOBILE -->
+        <div id="mobile">
+            <i id='bar' class="fa-solid fa-bars"></i>
+            <a href=""><i class="fa-solid fa-cart-shopping"></i></a>
+        </div>
+    </section>
+
+    <!-- HERO -->
+    <section id="page-header" class="about-header animate__animated animate__rubberBand">
+        <h2>
+            #hireme
+        </h2>
+        <p>Save more with coupons & up to 70% off!</p>
+    </section>
+
+    <!-- CONTACT -->
+
+    <section id="contact-details" class="section-p1">
+        <div class="details">
+            <span>GET IN TOUCH</span>
+            <h2>Visit one of pur agency locations or contact us today</h2>
+            <h3>Head Office</h3>
+
+            <ul>
+                <li>
+                    <i class="fa-solid fa-map"></i>
+                    <p>Quơn Long, Chợ Gạo, Tiền Giang</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-envelope"></i>
+                    <p>nguyenvanhuy178tiengiang@gmai.com</p>
+                </li>
+                <li>
+                    <i class="fa-solid fa-phone"></i>
+                    <p>0397010108</p>
+                </li>
+            </ul>
+
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d530.5705750440927!2d106.5045468453976!3d10.416132058158476!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x310ab2e36fe3068d%3A0xa9d97be69b3b8c60!2zUXXGoW4gTG9uZywgQ2jhu6MgR-G6oW8sIFRp4buBbiBHaWFuZywgVmnhu4d0IE5hbQ!5e1!3m2!1svi!2s!4v1677210640635!5m2!1svi!2s"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+    </section>
+
+    <!-- FROM -->
+
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            // https://dashboard.emailjs.com/admin/account
+            emailjs.init('kqj16tOqrb3N1eFwA');
+        })();
+    </script>
+
+    <script type="text/javascript">
+
+    </script>
+    <div class="form-details">
+        <!-- MODAL MESSAGE -->
+        <style>
+            /* Thiết Lập Modal Background */
+            .modal {
+                display: none;
+                /* Ẩn Mặc Định */
+                position: fixed;
+                z-index: 1;
+                padding-top: 200px;
+                /* Vị trí của modal */
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                overflow: auto;
+                /* thiết lập scroll khi cần thiết */
+                background-color: rgb(0, 0, 0);
+                background-color: rgba(0, 0, 0, 0.4);
+            }
+
+            #myBtn {
+                background-color: #4CAF50;
+                border: none;
+                color: white;
+                padding: 15px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                cursor: pointer;
+                -webkit-transition-duration: 0.4s;
+                /* Safari */
+                transition-duration: 0.4s;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+                    0 2px 2px rgba(0, 0, 0, 0.12),
+                    0 4px 4px rgba(0, 0, 0, 0.12),
+                    0 8px 8px rgba(0, 0, 0, 0.12),
+                    0 16px 16px rgba(0, 0, 0, 0.12);
+                outline: none;
+            }
+
+            /* Nội Dung Modal */
+            .modal-content {
+                background-color: #fefefe;
+                margin: auto;
+                padding: 20px;
+                border: 1px solid #888;
+                width: 20%;
+                height: 30%;
+                box-shadow: 0 1px 1px rgba(0, 0, 0, 0.12),
+                    0 2px 2px rgba(0, 0, 0, 0.12),
+                    0 4px 4px rgba(0, 0, 0, 0.12),
+                    0 8px 8px rgba(0, 0, 0, 0.12),
+                    0 16px 16px rgba(0, 0, 0, 0.12);
+                border-radius: 25px;
+            }
+
+            /* Nút Đóng Modal */
+            .close {
+                color: #aaaaaa;
+                float: right;
+                font-size: 28px;
+                font-weight: bold;
+            }
+
+            .close:hover,
+            .close:focus {
+                color: #000;
+                text-decoration: none;
+                cursor: pointer;
+            }
+        </style>
+        <!-- Modal  Website -->
+        <div id="myModal" class="modal">
+            <!-- Content Modal -->
+            <div class="modal-content">
+                <span class="close">×</span>
+                <p style="color: #000; text-align: center;"></p>
+            </div>
+        </div>
+
+        <!-- FORM -->
+        <form action="" id="contact-form" name="myFrom">
+            <span>Leave message</span>
+            <h2>We love to hear from you</h2>
+            <input type="hidden" name="contact_number">
+            <input type="text" placeholder="Your name" name="user_name" id='user_name'>
+            <input placeholder="Email" name="user_email" id='email'>
+            <label id='message_email' style="font-size: 10px; color: red;"></label>
+            <input type="text" placeholder="Subject" name="subject" id="subject">
+            <textarea placeholder="message" name="message" rows="10" id="message"></textarea>
+            <button type="submit" class="white" value="Send" id='myBtn'>SUBMIT</button>
+        </form>
+
+        <script>
+            window.onload = function () {
+                // VALIDATION
+                // Form validation code will come here.
+
+                let inputUserName = document.getElementById('user_name');
+                let inputEmail = document.getElementById('email');
+                let inputSubject = document.getElementById('subject');
+                let inputMessage = document.getElementById('message');
+                let message_emai = document.getElementById('message_email');
+
+                console.log(inputSubject);
 
 
-    <script src="script.js"></script>
+                // SEND EMAIL
+                document.getElementById('contact-form').addEventListener('submit', function (event) {
+                    event.preventDefault();
+                    // generate a five digit number for the contact_number variable
+                    this.contact_number.value = Math.random() * 100000 | 0;
+                    function validate() {
+                        let re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+                        if (inputUserName.value === "") {
+                            inputUserName.style.borderColor = 'red'
+                            inputUserName.focus();
+                            return false;
+                        }
+                        if (inputEmail.value === "" || re.test(inputEmail)) {
+                            inputEmail.style.borderColor = 'red';
+                            message_emai.innerHTML = !re.test(inputEmail) ? 'Email không hợp lệ' : "";
+                            inputEmail.focus();
+                            return false;
+                        }
+                        if (inputSubject.value === "") {
+                            inputSubject.style.borderColor = 'red';
+                            return false;
+                        }
+                        if (inputMessage.value === '') {
+                            inputMessage.style.borderColor = 'red';
+                            return false
+                        }
+                        return (true);
+                    }
+                    let check = validate();
 
+                    // these IDs from the previous steps
+                    check ?
+                        (emailjs.sendForm('huy_tg_178', 'template_x585lei', this)
+                            .then(
+                                function () {
+                                    let message = '';
+                                    message = 'SUCCESS';
+
+                                    let modal = document.getElementById("myModal");
+                                    let content = document.querySelector('.modal-content>p');
+                                    let btn = document.getElementById("myBtn");
+                                    let span = document.getElementsByClassName("close")[0];
+                                    modal.style.display = "block";
+                                    content.innerHTML = message
+
+                                    inputUserName.value = ''
+                                    inputEmail.value = '';
+                                    inputSubject.value = '';
+                                    inputMessage.value = '';
+                                    message_emai.value = '';
+
+                                    span.onclick = function () { //close model by x sign
+                                        modal.style.display = "none";
+                                    }
+
+                                    window.onclick = function (event) {
+                                        if (event.target == modal) { // click out the modal will close the modal
+                                            modal.style.display = "none";
+                                        }
+                                    }
+
+                                }
+                                , function (error) {
+                                    message = error.response.data.content;
+                                    console.log(message, error);
+                                }
+                            )
+
+                        ) : null
+                });
+
+
+
+            }
+        </script>
+        <!-- PEOPLE -->
+        <section class="people">
+            <div>
+                <img src="img/people/1.png" alt="people-1">
+                <p><span>John Doe</span> Senior Marketing Manager <br /> Phone: +000 123 000 77 88 <br /> Email:
+                    contact@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/people/2.png" alt="people-1">
+                <p><span>John Doe</span> Senior Marketing Manager <br /> Phone: +000 123 000 77 88 <br /> Email:
+                    contact@gmail.com</p>
+            </div>
+            <div>
+                <img src="img/people/3.png" alt="people-1">
+                <p><span>John Doe</span> Senior Marketing Manager <br /> Phone: +000 123 000 77 88 <br /> Email:
+                    contact@gmail.com</p>
+            </div>
+        </section>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="./img/logo.png" alt="logo">
+            <h4>Contact</h4>
+            <p><strong>Address: </strong>Quơn Long, Chợ Gạo, Tiền Giang</p>
+            <p><strong>Phone: </strong> 0397010108</p>
+
+            <div class="follow">
+                <h4>Follow us</h4>
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                    <i class="fa-brands fa-tiktok"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <h4>About</h4>
+            <p><a href="#">About us</a></p>
+            <p><a href="#">Delivery Infomation</a></p>
+            <p><a href="#">Privacy policy</a></p>
+            <p><a href="#">Terms & Conditions</a></p>
+            <p><a href="#">Contact us</a></p>
+        </div>
+        <div class="col">
+            <h4>My account</h4>
+            <p><a href="#">Sign in</a></p>
+            <p><a href="#">View Cart</a></p>
+            <p><a href="#">My Wishlist</a></p>
+            <p><a href="#">Track My Other</a></p>
+            <p><a href="#">Help</a></p>
+        </div>
+        <div class="col insall">
+            <h4>Install app</h4>
+            <p>From App Store and Google Play</p>
+            <div class="row">
+                <img src="./img/pay/app.jpg" alt="app">
+                <img src="./img/pay/play.jpg" alt="app">
+            </div>
+            <p>Secured Payment Gateways</p>
+            <img src="/img/pay/pay.png" alt="">
+        </div>
+
+        <div class="copyright">
+            <p> &#169; 2023, Nguyen Van Huy - HTML, CSS, JavaScript Ecommerce Template</p>
+        </div>
+    </footer>
+
+    <!-- LOADER -->
+    <div class="loader-wrapper">
+        <span class="loader"><span class="loader-inner"></span></span>
+    </div>
+
+    <script src="./module/wow.min.js"></script>
+    <script>
+        // SET UP WOW JS
+        new WOW().init();
+    </script>
+
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>

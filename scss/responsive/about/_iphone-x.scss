@@ -1,0 +1,30 @@
+@media screen and (max-width: 400.98px) {
+
+    #about-header .desc-about {
+        margin-left: 0px;
+    }
+
+    #about-header {
+        figure {
+            h4 {
+                font-size: $fz-15;
+            }
+
+            h2 {
+                font-size: $fz-24;
+            }
+        }
+    }
+
+    h2 {
+        font-size: $fz-30;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    #feature.section-p1 {
+        padding: 5px;
+    }
+}
