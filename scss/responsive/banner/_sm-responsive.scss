@@ -1,10 +1,15 @@
 @media screen and (max-width: 767.98px) {
     #banner {
+
         height: 20vh;
 
         h4 {
             font-size: $fz-16;
         }
+    }
+
+    #sm-banner {
+        justify-content: center;
     }
 
     #sm-banner.section-p1 {

@@ -1,0 +1,26 @@
+@media screen and (max-width: 400.98px) {
+
+    .form-details {
+        margin: 0px;
+        padding: 10px;
+        margin-top: 50px;
+        display: block;
+
+        form {
+            width: 100%;
+        }
+
+        .people {
+            margin-top: 50px;
+            width: 100%;
+
+            & div {
+                padding-bottom: 25px;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+            }
+        }
+
+    }
+}

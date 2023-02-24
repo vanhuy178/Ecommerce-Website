@@ -2,6 +2,10 @@
     @include align-position-by-flex(center, space-between);
     flex-wrap: wrap;
 
+    .section-p1 {
+        padding: 40px 80px;
+    }
+
     .fe-box {
         width: 180px;
         text-align: center;

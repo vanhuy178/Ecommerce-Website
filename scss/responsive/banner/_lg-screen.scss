@@ -1,0 +1,9 @@
+// Large devices (desktops, less than 1200px)
+@media screen and (max-width: 1199.98px) {
+    #sm-banner {
+        .banner-box {
+            min-width: 500px;
+        }
+
+    }
+}

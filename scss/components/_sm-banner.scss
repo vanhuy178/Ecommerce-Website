@@ -3,12 +3,12 @@
     flex-wrap: wrap;
 
     .banner-box {
+        @include fixingImageBackground('../img/banner/b17.jpg', cover, center);
         @include align-position-by-flex(flex-start, center);
         flex-direction: column;
         text-align: center;
         min-width: 660px;
         height: 50vh;
-        @include fixingImageBackground('../img/banner/b17.jpg', cover, center);
         padding: 20px;
         margin-bottom: 20px;
 

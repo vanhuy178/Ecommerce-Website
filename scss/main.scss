@@ -30,7 +30,30 @@
 @import './pages/about';
 @import'./pages/blog';
 @import './pages/contact';
+@import './pages/cart';
 
+// RESPONSIVE LG
+// HEADER
+@import './responsive/header/lg-sreen';
+
+//FEATURE
+@import './responsive/feature/lg-screen';
+
+// BANNER 
+@import'./responsive/banner/lg-screen';
+
+// CART 
+@import './responsive/cart/lg-screen';
+
+
+
+// RESPONSIVE MD
+
+// BANNER 
+@import './responsive/banner/md-screen';
+
+// PRODUCT ONE
+@import './responsive/product1/md-screen';
 
 // RESPONSIVE SM
 // HEADER
@@ -59,6 +82,15 @@
 
 // CONTACT
 @import './responsive/contact/sm-screen';
+
+// CART 
+@import './responsive/cart/sm-screen';
+
+// RESPONSIVE EXTRA SMALL
+@import './responsive/product1/es-screen';
+
+
+
 
 // RESPONSIVE IPHONE 12PRO
 @import './responsive/header/iphone-x';
