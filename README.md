@@ -1,6 +1,5 @@
 # Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
-
-## Link demo: https://main--boisterous-belekoy-7facfe.netlify.app/
+Link demo: https://main--boisterous-belekoy-7facfe.netlify.app/
 
 ## Home page
 ![](img/home.png)
