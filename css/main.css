@@ -1104,6 +1104,36 @@ h2 {
     justify-content: center;
   }
 }
+@media screen and (max-width: 575.98px) {
+  #cart.section-p1 {
+    padding: 40px 0;
+  }
+  #cart-add #coupon,
+  #cart-add #subtotal {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  footer.section-p1 {
+    padding: 40px 20px;
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .form-details {
+    display: block;
+  }
+  .form-details form,
+  .form-details .people {
+    width: 100%;
+  }
+  .form-details .people {
+    margin-top: 40px;
+    width: 70%;
+  }
+  .form-details .people div {
+    justify-content: space-between;
+  }
+}
 @media screen and (max-width: 400.98px) {
   #header {
     padding: 20px;

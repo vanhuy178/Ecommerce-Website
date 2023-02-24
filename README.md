@@ -1,5 +1,7 @@
 # Build-and-Deploy-Ecommerce-Website-With-HTML-CSS-JavaScript
 
+
+## Skill and knowledge we get via this project
 - Responsive Ecommerce Website Tutorial Using HTML CSS & JavaScript.
 - Completely For Beginners.
 - Multipage Ecommerce Website Project.
@@ -20,4 +22,13 @@
 - Part5: Contact Us.
 - Part6: Ecommerce Shopping Cart.
 
+## Responvive 5 breakpoints: 1199px, 991px, 767px, 575px, 375px
+
 ## Technology for my project
+```
+Jquery 
+EmailJs
+HTML 5
+CSS 3
+SCSS
+```

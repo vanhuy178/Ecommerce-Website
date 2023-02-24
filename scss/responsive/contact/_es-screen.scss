@@ -1,0 +1,21 @@
+@media screen and (max-width: 575.98px) {
+    .form-details {
+        display: block;
+
+        form,
+        .people {
+            width: 100%;
+        }
+
+    }
+
+    .form-details .people {
+        margin-top: 40px;
+        width: 70%;
+    }
+
+    .form-details .people div {
+        justify-content: space-between;
+    }
+
+}
